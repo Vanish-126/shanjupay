@@ -56,6 +56,7 @@ public class UnifiedUserAuthenticationConverter implements UserAuthenticationCon
         return response;
     }
 
+    @Override
     public Authentication extractAuthentication(Map<String, ?> map) {
         if (map.containsKey(USERNAME)) {
             Object principal = map.get(USERNAME);

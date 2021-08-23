@@ -45,8 +45,9 @@ public class MerchantController {
     @Autowired
     FileService fileService;
 
+
     /**
-     * 测试1
+     * 测试1：
      * 根据id查询商户信息
      * 测试接口：localhost:56010/merchant/merchants/1
      * 56010是网关启动端口
@@ -62,7 +63,7 @@ public class MerchantController {
     }
 
     /**
-     * 测试2
+     * 测试2：
      * 获取登录用户的商户信息
      * 测试接口：localhost:56010/merchant/my/merchants
      * @return
@@ -70,7 +71,7 @@ public class MerchantController {
     @ApiOperation("获取登录用户的商户信息")
     @GetMapping(value="/my/merchants")
     public MerchantDTO getMyMerchantInfo(){
-        //从token中获取商户id
+        // 从token中获取商户id
         Long merchantId = SecurityUtil.getMerchantId();
         return merchantService.queryMerchantById(merchantId);
     }
@@ -90,7 +91,7 @@ public class MerchantController {
     @ApiImplicitParam(value = "手机号",name = "phone",required = true,dataType = "string",paramType = "query")
     @GetMapping("/sms")
     public String getSMSCode(@RequestParam("phone") String phone){
-        //发送验证码
+        // 发送验证码
         return smsService.sendMsg(phone);
     }
 

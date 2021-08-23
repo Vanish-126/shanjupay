@@ -16,20 +16,21 @@ public interface MerchantService {
      * @param tenantId
      * @return
      */
-    public MerchantDTO queryMerchantByTenantId(Long tenantId);
+    MerchantDTO queryMerchantByTenantId(Long tenantId);
 
     /**
      * 根据id查询商户信息
      * @param id
      * @return
      */
-    public MerchantDTO queryMerchantById(Long id);
+    MerchantDTO queryMerchantById(Long id);
 
     /**
      * 注册商户服务接口，接收账号、密码、手机号
      * 为了可扩展性使用merchantDto接收数据
      * @param merchantDTO 商户注册信息
      * @return 注册成功的商户信息
+     * @throws BusinessException
      */
     MerchantDTO createMerchant(MerchantDTO merchantDTO) throws BusinessException;
 

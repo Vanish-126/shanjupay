@@ -8,7 +8,10 @@ import java.io.Serializable;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import com.baomidou.mybatisplus.annotation.TableName;
-//generator自动生成
+
+/**
+ * generator自动生成
+ */
 @Data
 @TableName("merchant")
 public class Merchant implements Serializable {
