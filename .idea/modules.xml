@@ -24,7 +24,6 @@
       <module fileurl="file://$PROJECT_DIR$/shanjupay-user/shanjupay-user.iml" filepath="$PROJECT_DIR$/shanjupay-user/shanjupay-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/shanjupay-user/shanjupay-user-api/shanjupay-user-api.iml" filepath="$PROJECT_DIR$/shanjupay-user/shanjupay-user-api/shanjupay-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/shanjupay-user/shanjupay-user-service/shanjupay-user-service.iml" filepath="$PROJECT_DIR$/shanjupay-user/shanjupay-user-service/shanjupay-user-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-freemarker/test-freemarker.iml" filepath="$PROJECT_DIR$/test-freemarker/test-freemarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-rocketmq/test-rocketmq.iml" filepath="$PROJECT_DIR$/test-rocketmq/test-rocketmq.iml" />
     </modules>
